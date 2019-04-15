@@ -3,15 +3,28 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Floren&#39;s Blog</title>
+  <title>redis 4详解 | Floren&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Floren&#39;s Blog">
-<meta property="og:url" content="https://florenbai.github.io/index.html">
+  <meta name="description" content="本文档所有内容基于 Redis 4.0.11版本。 安装http://183.207.95.23/cache/download.redis.io/releases/redis-4.0.11.tar.gz?ich_args2=514-09134606064910_edfd3af220247515fc154fd7bda89914_10001002_9c896725d7c5f2d89038518939a">
+<meta name="keywords" content="redis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="redis 4详解">
+<meta property="og:url" content="https://florenbai.github.io/2018/10/18/redis 4详解/index.html">
 <meta property="og:site_name" content="Floren&#39;s Blog">
+<meta property="og:description" content="本文档所有内容基于 Redis 4.0.11版本。 安装http://183.207.95.23/cache/download.redis.io/releases/redis-4.0.11.tar.gz?ich_args2=514-09134606064910_edfd3af220247515fc154fd7bda89914_10001002_9c896725d7c5f2d89038518939a">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://oslz3deon.bkt.clouddn.com/LFU%E7%AE%97%E6%B3%95%E6%B7%98%E6%B1%B0%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="http://redisbook.com/_images/graphviz-a8d31075b4c0537f4eb6d84aaba1df928c67c953.png">
+<meta property="og:image" content="http://redisbook.com/_images/graphviz-84c0d231f30c740a431407c7aaf3851b96399590.png">
+<meta property="og:image" content="http://redisbook.com/_images/graphviz-7ba8b1f3af17e2e62cdf43608914333bf14d8e91.png">
+<meta property="og:image" content="http://redisbook.com/_images/graphviz-68cb863d265a1cd1ccfb038d44ce6b856ebbbe3a.png">
+<meta property="og:image" content="http://redisbook.com/_images/graphviz-8d7b7d0e78ad9d445ff14834e9e9618234395d46.png">
+<meta property="og:image" content="c:/Users/aaa/AppData/Roaming/Typora/typora-user-images/1539570260034.png">
+<meta property="og:updated_time" content="2019-04-15T07:06:23.118Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Floren&#39;s Blog">
+<meta name="twitter:title" content="redis 4详解">
+<meta name="twitter:description" content="本文档所有内容基于 Redis 4.0.11版本。 安装http://183.207.95.23/cache/download.redis.io/releases/redis-4.0.11.tar.gz?ich_args2=514-09134606064910_edfd3af220247515fc154fd7bda89914_10001002_9c896725d7c5f2d89038518939a">
+<meta name="twitter:image" content="http://oslz3deon.bkt.clouddn.com/LFU%E7%AE%97%E6%B3%95%E6%B7%98%E6%B1%B0%E8%BF%87%E7%A8%8B.png">
   
     <link rel="alternate" href="/atom.xml" title="Floren&#39;s Blog" type="application/atom+xml">
   
@@ -47,7 +60,7 @@
     <div class="collapse navbar-collapse" id="main-menu-navbar">
       <ul class="nav navbar-nav">
         
-          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a class href="/index.html">Home</a></li>
         
           <li><a class href="/archives/">Archives</a></li>
         
@@ -72,15 +85,13 @@
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-    <article id="post-redis 4详解" class="article article-type-post" itemscope itemprop="blogPost">
+          <article id="post-redis 4详解" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/18/redis 4详解/">redis 4详解</a>
+    <h1 class="article-title" itemprop="name">
+      redis 4详解
     </h1>
   
 
@@ -1209,77 +1220,22 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
   
-    <article id="post-zabbix-部署描述" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
+  <li role="presentation">
+    <a href="/2018/09/20/zabbix-部署描述/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">zabbix 部署描述</span>
+    </a>
+  </li>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/20/zabbix-部署描述/">zabbix 部署描述</a>
-    </h1>
   
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2018/09/20/zabbix-部署描述/" class="article-date"><time datetime="2018-09-20T10:07:18.000Z" itemprop="datePublished">2018-09-20</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="zabbix-部署描述"><a href="#zabbix-部署描述" class="headerlink" title="zabbix 部署描述"></a>zabbix 部署描述</h2><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>系统为：centos 7</p>
-<p>安装部署包文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> rpm -ivh http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-1.el7.noarch.rpm</span><br></pre></td></tr></table></figure>
-<p>安装数据库和web前端</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> yum install zabbix-server-mysql zabbix-web-mysql</span><br></pre></td></tr></table></figure>
-<p>安装Zabbix Agent</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> yum install zabbix-agent</span><br></pre></td></tr></table></figure>
-<p>安装zabbix_get</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> yum install zabbix-get.x86_64 -y</span><br></pre></td></tr></table></figure>
-<p>注意： 需要PHP支持mysqli、bcmatch、gettext等扩展。</p>
-<h4 id="问题汇总"><a href="#问题汇总" class="headerlink" title="问题汇总"></a>问题汇总</h4><p>Zabbix启动报cannot create semaphore set 故障处理</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cannot open <span class="built_in">log</span>: cannot create semaphore <span class="built_in">set</span>: [28] No space left on device</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ipcs -s | grep zabbix</span><br><span class="line">ipcs -s | grep zabbix| awk <span class="string">' &#123; print $2 &#125; '</span> | xargs -n 1 ipcrm -s</span><br></pre></td></tr></table></figure>
-<p>重启后就恢复</p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="https://florenbai.github.io/2018/09/20/zabbix-部署描述/" data-id="cjui0nvb40000koel0ctkqszk" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zabbix/">zabbix</a></li></ul>
-
-
-    </footer>
-  </div>
-  
-</article>
-
+</ul>
 
 
   
+</article>
 
 
 
